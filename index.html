@@ -1,84 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head profile="http://www.w3.org/2005/10/profile">
-        <link rel="icon"
-              type="image/png"
-              href="http://example.com/myicon.png">
-        <meta charset="utf-8">
-        <title>Google</title>
-        <style>
-        body{
-            margin:0;
-            overflow:auto;
-        }
-        header{
-            width: 100%;
-            text-align: right;
-        }
-        section{
-            width: 100%;
-            text-align:center;
-        }
-        .logo{
-            width: 187px;
-            padding: 15px;
-            margin-top:45px;
-        }
-        .top-right{
-            width: 150px;
-            margin: 5px;
-        }
-        input{
-            border: thin solid lightgray;
-            border-radius: 15px;
-            width: 400px;
-            height: 30px;
-            margin-left: 90px;
-        }
-        .button{
-            width: 300px;
-            margin: 0 auto;
-            padding: 15px;
-        }
-        .icon{
-            position: relative;
-            width:25px;
-            right:398px;
-            top:5px;
-        }
-        .second{
-            width: 28px;
-            right:95px;
-        }
-        .third{
-            right:100px;
-        }
-        footer{
-           position:fixed;
-           bottom:0;
-           font-size:0;
-        }
-        </style>
+    <head>
+        <title>Todolist</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="clock.css"/>
     </head>
     <body>
-        <header>
-            <img class="top-right", src="C:\Users\user\Desktop\web\googleclone\top-right.JPG">
-        </header>
-        <section>
-            <div>
-                <img class="logo", src="C:\Users\user\Desktop\web\googleclone\368px-Google_2015_logo.svg.png">
-            </div>
-            <input type="search">
-                <img class="icon first", src="C:\Users\user\Desktop\web\googleclone\icon1.JPG">
-                <img class="icon second", src="C:\Users\user\Desktop\web\googleclone\icon2.JPG">
-                <img class="icon third", src="C:\Users\user\Desktop\web\googleclone\icon3.JPG">
-            <div class="button">
-                <img width=85px, src="C:\Users\user\Desktop\web\googleclone\search.JPG">
-                <img width=100px, src="C:\Users\user\Desktop\web\googleclone\iamfeelinglucky.JPG">
-            </div>
-        </section>
-        <footer>
-            <img height=60px, width=100%, src="C:\Users\user\Desktop\web\googleclone\bottom-line.JPG">
-        </footer>
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?"/>
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a to do" />
+        </form>
+        <ul class="js-toDoList">
+        </ul>
+        <span class="js-weather"></span>
+        <script src="clock.js"></script>
+        <script src="greeting.js"></script>
+        <script src="todo.js"></script>
+        <script src="background.js"></script>
+        <script src="weather.js"></script>
     </body>
 </html>
