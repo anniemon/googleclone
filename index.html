@@ -4,56 +4,74 @@
     <meta charset="utf-8">
         <title>Google</title>
         <style>
-        body{
-            margin:0;
-            overflow:auto;
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
-        header{
-            width: 100%;
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
             text-align: right;
+            flex: 0 0 0;
         }
+
         section{
-            width: 100%;
-            text-align:center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1 0 0;
         }
-        .logo{
-            width: 187px;
-            padding: 15px;
-            margin-top:45px;
-        }
-        .top-right{
+        
+        .top-right{ 
             width: 150px;
             margin: 5px;
+        }
+        .logo {
+            width: 15rem;
         }
         input{
             border: thin solid lightgray;
             border-radius: 15px;
-            width: 400px;
-            height: 30px;
-            margin-left: 90px;
+            width: 30rem;
+            height: 2rem;
+            margin: 2rem auto;
         }
-        .button{
-            width: 300px;
-            margin: 0 auto;
+    
+
+        .button-box {            
             padding: 15px;
+            margin: 0 auto;
         }
-        .icon{
-            position: relative;
+        
+        button {
+            width: 8rem;
+            border: none;
+            background-color: #fafafa;
+            height: 2.5rem;
+            margin: 0.3rem;
+        }
+
+        .icon {
             width:25px;
-            right:398px;
-            top:5px;
         }
-        .second{
+
+        .keyboard {
             width: 28px;
-            right:95px;
         }
-        .third{
-            right:100px;
+
+        .mic {
         }
-        footer{
-           position:fixed;
-           bottom:0;
-           font-size:0;
+
+        footer {
+           background-color: aqua;
+           flex: 0 0 0;
         }
         </style>
     </head>
@@ -62,20 +80,20 @@
             <img class="top-right", src="https://anniemon.github.io/googleclone/top-right.JPG">
         </header>
         <section>
-            <div>
-                <img class="logo", src="https://anniemon.github.io/googleclone/368px-Google_2015_logo.svg.png">
+            <img class="logo" src="https://anniemon.github.io/googleclone/368px-Google_2015_logo.svg.png">
+            <div class = "search-box">
+              <input type="search">
+                <img class="icon search", src="./icon--search.JPG">
+                <img class="icon keyboard", src="./icon--keyboard.JPG">
+                <img class="icon mic", src="./icon--mic.JPG">
             </div>
-            <input type="search">
-                <img class="icon first", src="https://anniemon.github.io/googleclone\icon1.JPG">
-                <img class="icon second", src="https://anniemon.github.io/googleclone\icon2.JPG">
-                <img class="icon third", src="https://anniemon.github.io/googleclone\icon3.JPG">
-            <div class="button">
-                <img width=85px, src="https://anniemon.github.io/googleclone\search.JPG">
-                <img width=100px, src="https://anniemon.github.io/googleclone\iamfeelinglucky.JPG">
+            <div class="button-box">
+                <button>Google 검색</button>
+                <button>I'm Feeling Lucky</button>
             </div>
         </section>
         <footer>
-            <img height=60px, width=100%, src="https://anniemon.github.io/googleclone\bottom-line.JPG">
+        푸터
         </footer>
     </body>
 </html>
