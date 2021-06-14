@@ -36,17 +36,41 @@
         .logo {
             width: 15rem;
         }
-        input{
+        .search-box {
+            position: relative;
+        }
+
+        input{            
             border: thin solid lightgray;
             border-radius: 15px;
             width: 30rem;
             height: 2rem;
-            margin: 2rem auto;
+            margin: 1rem 0;
         }
     
+        .icon {
+            position: absolute;
+            width:25px;
+            top: 1.4rem;
+
+        }
+        
+        .search {
+            right: 28rem;
+            
+        }
+
+        .keyboard {
+            width: 28px;
+            right: 2.8rem;
+            top: 1.5rem;
+        }
+
+        .mic {
+            right: 1rem;
+        }
 
         .button-box {            
-            padding: 15px;
             margin: 0 auto;
         }
         
@@ -58,29 +82,20 @@
             margin: 0.3rem;
         }
 
-        .icon {
-            width:25px;
-        }
-
-        .keyboard {
-            width: 28px;
-        }
-
-        .mic {
-        }
-
+      
         footer {
            background-color: aqua;
            flex: 0 0 0;
         }
+
         </style>
     </head>
     <body>
         <header>
-            <img class="top-right", src="https://anniemon.github.io/googleclone/top-right.JPG">
+            <img class="top-right", src="./top-right.JPG">
         </header>
         <section>
-            <img class="logo" src="https://anniemon.github.io/googleclone/368px-Google_2015_logo.svg.png">
+            <img class="logo" src="./logo.png">
             <div class = "search-box">
               <input type="search">
                 <img class="icon search", src="./icon--search.JPG">
