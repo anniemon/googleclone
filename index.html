@@ -26,7 +26,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            flex: 1 0 0;
+            flex: 0.9 0 0;
         }
         
         .top-right{ 
@@ -34,7 +34,7 @@
             margin: 5px;
         }
         .logo {
-            width: 15rem;
+            width: 17rem;
         }
         .search-box {
             position: relative;
@@ -44,14 +44,14 @@
             border: thin solid lightgray;
             border-radius: 15px;
             width: 30rem;
-            height: 2rem;
+            height: 2.2rem;
             margin: 1rem 0;
         }
     
         .icon {
             position: absolute;
             width:25px;
-            top: 1.4rem;
+            top: 1.5rem;
 
         }
         
@@ -63,7 +63,7 @@
         .keyboard {
             width: 28px;
             right: 2.8rem;
-            top: 1.5rem;
+            top: 1.6rem;
         }
 
         .mic {
@@ -82,10 +82,34 @@
             margin: 0.3rem;
         }
 
-      
         footer {
-           background-color: aqua;
-           flex: 0 0 0;
+           background-color: #f2f2f2;
+           flex: 0.1 0 0;
+           color: #70757a;
+           display: flex;
+           flex-direction: column;
+        }
+
+        .footer-firstline{
+            flex: 0.5 0 0;
+            display: flex;
+            align-items: center;
+            margin-left: 13px;
+        }
+
+        .footer-secondline{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex: 0.5 0 0;
+        }
+
+        .footer-secondline span {
+            font-size: 15px;
+        }
+
+        footer span {
+            margin: 0.5rem;
         }
 
         </style>
@@ -108,7 +132,23 @@
             </div>
         </section>
         <footer>
-        푸터
+            <div class="footer-firstline">
+                <span>대한민국</span>
+            </div>
+            <div class="footer-secondline">
+                <span>
+                    <span>Google 정보</span>
+                    <span>광고</span>
+                    <span>비즈니스</span>
+                    <span>검색의 원리</span>
+                </span>
+                <span>
+                    <span>설정</span>
+                    <span>약관</span>
+                    <span>개인정보처리방침</span>
+                </span>
+            </div> 
         </footer>
     </body>
 </html>
+
